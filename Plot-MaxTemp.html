@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Lat.-MaxTemp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Martin Hrbac">
+
+	<!-- Get boostrap css files from cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="./css/latitude.css" >
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Lattitude</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+     </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav ml-auto">
+		  <li id="navbarDropdown" class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-line-chart"></i> Plots</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item active" href="Plot-MaxTemp.html">Max Temperature</a>
+			  <a class="dropdown-item" href="Plot-Humidity.html">Humidity</a>
+			  <a class="dropdown-item" href="Plot-Cloudiness.html">Cloudiness</a>
+			  <a class="dropdown-item" href="Plot-WindSpeed.html">Wind Speed</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="Comparison.html"><i class="fa fa-eye"></i> Comparison</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="Data.html"><i class="fa fa-table"></i> Data</a>
+		  </li>
+		</ul>
+	</div>
+</nav>
+<!-- Content -->
+<main role="main" class="container bg-white">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="col-title text-center">City Latitude vs. Max Temperature</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" title="City Latitude vs. Max Temperature" >
+			<img class="float-left col-md-9" src="./assets/MaxTemperature_Latitude.png" alt="City Latitude vs. Max Temperature">
+			<p>
+				As expected, the weather becomes significantly wormer as one approaches the equator (0 Deg. Latitude).
+				More interestingly, however, is the fact that the northen hemisphere tends to be warmer this time of year 
+				than the northen hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.				
+			</p>
+		</div>
+	</div>
+</main>
+<!-- Footer -->
+<footer id="footer" class="footer bg-dark">
+   <div class="container text-center">
+		<span class="copyleft">&copy;</span> HomeWorks 2019
+	</div>
+</footer>
+<!-- Get boostrap jscript files from cdn -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

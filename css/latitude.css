@@ -1,0 +1,110 @@
+/* 
+	CSS for HW 09-HTML and CSS
+	martin.hrbac@siemens.com
+	08/23/2019
+	
+	File contains common css rules
+*/
+/*
+@media (max-width: 768px) {
+  .row, .navbar {
+	display: flex;
+    lex-direction: column;
+  }
+}
+*/
+
+body {
+	 font-family: Arial;
+	 background-color: lightgray;
+	 margin: 0;
+	 margin-bottom: 55px; /* Margin bottom by footer height */
+	/* padding-top: 80px; */
+	padding-top: 4.5rem;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.copyleft {
+	display: inline-block;
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+
+/* sticky footer*/
+#footer{
+	color: white;
+	border-top: .3em solid #00B793;
+	padding: 0.5em;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	min-height: 45px; /* Set the fixed height of the footer here */	
+}
+
+.navbar-brand{
+	color: white;
+	padding: 10px 15px;
+	background-color: #00B793; /*#00B793*/
+}
+
+.col-title{
+	color: teal;	
+	padding: 10px 15px;
+}
+
+div.navigation-tile:hover,
+img.navigation-tile:hover
+ {
+	cursor: pointer;
+	border: 3px solid #00B793;
+	/* transform: scale(1.5); */
+	/* background-color: lightgray; */
+}
+
+.help-text{
+	color: blue;
+	display: block;
+	float: right;
+	position: relative;
+	top: -20px;
+}
+
+/* For city data table */
+#cityteble th:first-child{
+	padding-right: 10px;
+	text-align: right;
+}
+#cityteble td:nth-child(n+3),
+#cityteble th:nth-child(n+3){
+	padding-right: 10px;
+	text-align: center;
+}
+
+/* #cityteble th, td { */
+	/* white-space: nowrap; */
+	/* text-overflow: ellipsis; */
+/* } */
+
+/* This rules were added to play with table 'sticky header'
+@media (min-width: 1000px) {
+	#cityteble tbody {
+		display: block;
+		height: calc(100vh - 285px);
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	#cityteble thead, tbody tr {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+}
+*/
