@@ -11,10 +11,10 @@
 	/* display: flex; */
     /* lex-direction: column; */
   /* } */
-  .col-rbd{
+  .col-lbd{
 	border-left: 10px solid lightgray;
   }
-  .col-lbd{
+  .col-rbd{
 	border-right: 10px solid lightgray;
   }
 }
