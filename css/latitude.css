@@ -5,14 +5,19 @@
 	
 	File contains common css rules
 */
-/*
-@media (max-width: 768px) {
-  .row, .navbar {
-	display: flex;
-    lex-direction: column;
+
+@media (min-width: 768px) {
+  /* .row, .navbar { */
+	/* display: flex; */
+    /* lex-direction: column; */
+  /* } */
+  .bd-lpanelsplit{
+	border-left: 10px solid lightgray;
+  }
+  .bd-rpanelsplit{
+	border-right: 10px solid lightgray;
   }
 }
-*/
 
 body {
 	 font-family: Arial;
